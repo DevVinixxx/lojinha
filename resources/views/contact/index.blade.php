@@ -1,7 +1,7 @@
 @extends('layouts.app')
-@section('title','Index')
+@section('title','Fale Conosco')
 @section('content')
-    <div>
+    <div class="">
         
     </div>
 @endsection

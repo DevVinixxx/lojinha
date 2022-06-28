@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ShopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index.index');
-});
+
+Route::get('/', [ShopController::class, 'index'])->name('index');
+Route::get('/about', [ShopController::class, 'about'])->name('about');
+Route::get('/contact', [ShopController::class, 'contact'])->name('contact');
+Route::get('/shopping', [ShopController::class, 'shopping'])->name('shopping');
