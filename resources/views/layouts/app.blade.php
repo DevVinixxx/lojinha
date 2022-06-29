@@ -26,7 +26,7 @@
                 </div>
                 <div>
                     <a class="text-light" href="http://facebook.com/" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/pereeeezxx/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
                 </div>
@@ -37,7 +37,7 @@
         <nav class="navbar navbar-expand-lg navbar-light shadow">
             <div class="container d-flex justify-content-between align-items-center">
     
-                <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                <a class="navbar-brand text-success logo h1 align-self-center" href="{{Route('index')}}">
                     Vini Store
                 </a>
     
@@ -49,16 +49,16 @@
                     <div class="flex-fill">
                         <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="{{Route('index')}}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">Sobre Nós</a>
+                                <a class="nav-link" href="{{Route('about')}}">Sobre Nós</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="shop.html">Shopping</a>
+                                <a class="nav-link" href="{{Route('products')}}">Shopping</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contato</a>
+                                <a class="nav-link" href="{{Route('contact')}}">Contato</a>
                             </li>
                         </ul>
                     </div>
