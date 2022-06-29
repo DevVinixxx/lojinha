@@ -21,8 +21,13 @@ class ShopController extends Controller
         return view('contact.index');
     }
 
-    public function shopping()
+    public function products()
     {
-        return view('shopping.index');
+        return view('products.index');
+    }
+
+    public function product()
+    {
+        return view('products.product');
     }
 }

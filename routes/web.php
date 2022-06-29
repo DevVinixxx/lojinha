@@ -18,4 +18,6 @@ use App\Http\Controllers\ShopController;
 Route::get('/', [ShopController::class, 'index'])->name('index');
 Route::get('/about', [ShopController::class, 'about'])->name('about');
 Route::get('/contact', [ShopController::class, 'contact'])->name('contact');
-Route::get('/shopping', [ShopController::class, 'shopping'])->name('shopping');
+Route::get('/products', [ShopController::class, 'products'])->name('products');
+Route::get('/product', [ShopController::class, 'product'])->name('product');
+
