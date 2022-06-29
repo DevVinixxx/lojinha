@@ -30,4 +30,9 @@ class ShopController extends Controller
     {
         return view('products.product');
     }
+
+    public function cart()
+    {
+        return view('products.cart');
+    }
 }

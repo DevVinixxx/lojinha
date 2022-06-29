@@ -38,7 +38,7 @@
             <div class="container d-flex justify-content-between align-items-center">
     
                 <a class="navbar-brand text-success logo h1 align-self-center" href="{{Route('index')}}">
-                    Vini Store
+                    <img src="{{asset('img/logovini.png')}}" alt="logo" height="70px">
                 </a>
     
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,7 +116,7 @@
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Produtos</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Departamentos</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li><a class="text-decoration-none" href="#">Luxury</a></li>
                         <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
@@ -131,11 +131,9 @@
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light"> Informações </h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">About Us</a></li>
-                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
-                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                        <li><a class="text-decoration-none" href="#">Contact</a></li>
+                        <li><a class="text-decoration-none" href="{{Route('index')}}"> Home </a></li>
+                        <li><a class="text-decoration-none" href="{{Route('about')}}"> Nossa Loja </a></li>
+                        <li><a class="text-decoration-none" href="{{Route('contact')}}">Fale Conosco</a></li>
                     </ul>
                 </div>
 
