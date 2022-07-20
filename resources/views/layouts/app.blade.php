@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('title')</title>
+    <link rel = "icon" href ="{{asset('img/vs.png')}}" type = "image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
@@ -37,7 +38,7 @@
         <nav class="navbar navbar-expand-lg navbar-light shadow">
             <div class="container d-flex justify-content-between align-items-center">
     
-                <a class="navbar-brand text-success logo h1 align-self-center" href="{{Route('index')}}">
+                <a href="{{Route('index')}}">
                     <img src="{{asset('img/logovini.png')}}" alt="logo" height="70px">
                 </a>
     
@@ -98,7 +99,7 @@
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Vini Store</h2>
+                    <h2 class="h2 text-secondary border-bottom pb-3 border-light logo">Vini Store</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
@@ -168,7 +169,7 @@
                     <div class="col-12">
                         <p class="text-left text-light">
                              2022 
-                            | Designed by <a rel="sponsored" href="https://www.instagram.com/pereeeezxx/" target="_blank">Vinícius Peres</a>
+                            | Designed by @<a rel="sponsored" href="https://www.instagram.com/pereeeezxx/" target="_blank">Vinícius Peres</a>
                         </p>
                     </div>
                 </div>

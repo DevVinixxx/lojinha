@@ -2,7 +2,7 @@
 @section('title','Sobre Nós')
 @section('content')
     <div class="">
-        <section class="bg-success py-5">
+        <section class="bg-secondary py-5">
             <div class="container">
                 <div class="row align-items-center py-5">
                     <div class="col-md-8 text-white">
@@ -38,28 +38,28 @@
     
                 <div class="col-md-6 col-lg-3 pb-5">
                     <div class="h-100 py-5 services-icon-wap shadow">
-                        <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
+                        <div class="h1 text-secondary text-center"><i class="fa fa-truck fa-lg"></i></div>
                         <h2 class="h5 mt-4 text-center">Delivery Services</h2>
                     </div>
                 </div>
     
                 <div class="col-md-6 col-lg-3 pb-5">
                     <div class="h-100 py-5 services-icon-wap shadow">
-                        <div class="h1 text-success text-center"><i class="fas fa-exchange-alt"></i></div>
+                        <div class="h1 text-secondary text-center"><i class="fas fa-exchange-alt"></i></div>
                         <h2 class="h5 mt-4 text-center">Shipping & Return</h2>
                     </div>
                 </div>
     
                 <div class="col-md-6 col-lg-3 pb-5">
                     <div class="h-100 py-5 services-icon-wap shadow">
-                        <div class="h1 text-success text-center"><i class="fa fa-percent"></i></div>
+                        <div class="h1 text-secondary text-center"><i class="fa fa-percent"></i></div>
                         <h2 class="h5 mt-4 text-center">Promotion</h2>
                     </div>
                 </div>
     
                 <div class="col-md-6 col-lg-3 pb-5">
                     <div class="h-100 py-5 services-icon-wap shadow">
-                        <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
+                        <div class="h1 text-secondary text-center"><i class="fa fa-user"></i></div>
                         <h2 class="h5 mt-4 text-center">24 Hours Service</h2>
                     </div>
                 </div>

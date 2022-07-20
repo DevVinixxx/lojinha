@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Index')
+@section('title','Home Page')
 @section('content')
     <div class="">
         <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -17,14 +17,14 @@
                             </div>
                             <div class="col-lg-6 mb-0 d-flex align-items-center">
                                 <div class="text-align-left align-self-center">
-                                    <h1 class="h1 text-success"><b>Zay</b> eCommerce</h1>
+                                    <h1 class="h1 text-secondary"><b>Zay</b> eCommerce</h1>
                                     <h3 class="h2">Tiny and Perfect eCommerce Template</h3>
                                     <p>
                                         Zay Shop is an eCommerce HTML5 CSS template with latest version of Bootstrap 5 (beta 1). 
-                                        This template is 100% free provided by <a rel="sponsored" class="text-success" href="https://templatemo.com" target="_blank">TemplateMo</a> website. 
-                                        Image credits go to <a rel="sponsored" class="text-success" href="https://stories.freepik.com/" target="_blank">Freepik Stories</a>,
-                                        <a rel="sponsored" class="text-success" href="https://unsplash.com/" target="_blank">Unsplash</a> and
-                                        <a rel="sponsored" class="text-success" href="https://icons8.com/" target="_blank">Icons 8</a>.
+                                        This template is 100% free provided by <a rel="sponsored" class="text-secondary" href="https://templatemo.com" target="_blank">TemplateMo</a> website. 
+                                        Image credits go to <a rel="sponsored" class="text-secondary" href="https://stories.freepik.com/" target="_blank">Freepik Stories</a>,
+                                        <a rel="sponsored" class="text-secondary" href="https://unsplash.com/" target="_blank">Unsplash</a> and
+                                        <a rel="sponsored" class="text-secondary" href="https://icons8.com/" target="_blank">Icons 8</a>.
                                     </p>
                                 </div>
                             </div>
@@ -92,17 +92,17 @@
                 <div class="col-12 col-md-4 p-5 mt-3">
                     <a href="#"><img src="{{asset('img/category_img_01.jpg')}}" class="rounded-circle img-fluid border"></a>
                     <h5 class="text-center mt-3 mb-3">Watches</h5>
-                    <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+                    <p class="text-center"><a class="btn btn-secondary">Go Shop</a></p>
                 </div>
                 <div class="col-12 col-md-4 p-5 mt-3">
                     <a href="#"><img src="{{asset('img/category_img_02.jpg')}}" class="rounded-circle img-fluid border"></a>
                     <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
-                    <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+                    <p class="text-center"><a class="btn btn-secondary">Go Shop</a></p>
                 </div>
                 <div class="col-12 col-md-4 p-5 mt-3">
                     <a href="#"><img src="{{asset('img/category_img_03.jpg')}}" class="rounded-circle img-fluid border"></a>
                     <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-                    <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+                    <p class="text-center"><a class="btn btn-secondary">Go Shop</a></p>
                 </div>
             </div>
         </section>
