@@ -17,7 +17,7 @@
                             </div>
                             <div class="col-lg-6 mb-0 d-flex align-items-center">
                                 <div class="text-align-left align-self-center">
-                                    <h1 class="h1 text-secondary"><b>Zay</b> eCommerce</h1>
+                                    <h1 class="h1 text-secondary"><b>Vini</b> Store </h1>
                                     <h3 class="h2">Tiny and Perfect eCommerce Template</h3>
                                     <p>
                                         Zay Shop is an eCommerce HTML5 CSS template with latest version of Bootstrap 5 (beta 1). 
@@ -121,7 +121,7 @@
                 <div class="row">
                     <div class="col-12 col-md-4 mb-4">
                         <div class="card h-100">
-                            <a href="shop-single.html">
+                            <a href="{{Route('product')}}">
                                 <img src="{{asset('img/feature_prod_01.jpg')}}" class="card-img-top" alt="...">
                             </a>
                             <div class="card-body">
@@ -145,7 +145,7 @@
                     </div>
                     <div class="col-12 col-md-4 mb-4">
                         <div class="card h-100">
-                            <a href="shop-single.html">
+                            <a href="{{Route('product')}}">
                                 <img src="{{asset('img/feature_prod_02.jpg')}}" class="card-img-top" alt="...">
                             </a>
                             <div class="card-body">
@@ -169,7 +169,7 @@
                     </div>
                     <div class="col-12 col-md-4 mb-4">
                         <div class="card h-100">
-                            <a href="shop-single.html">
+                            <a href="{{Route('product')}}">
                                 <img src="{{asset('img/feature_prod_03.jpg')}}" class="card-img-top" alt="...">
                             </a>
                             <div class="card-body">

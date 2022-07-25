@@ -47,8 +47,8 @@ $(document).ready(function() {
       var this_val = $(this).html();
       $("#product-size").val(this_val);
       $(".btn-size").removeClass('btn-secondary');
-      $(".btn-size").addClass('btn-success');
-      $(this).removeClass('btn-success');
+      $(".btn-size").addClass('btn-info');
+      $(this).removeClass('btn-info');
       $(this).addClass('btn-secondary');
       return false;
     });
