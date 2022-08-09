@@ -16,8 +16,16 @@ use App\Http\Controllers\ShopController;
 
 
 Route::get('/', [ShopController::class, 'index'])->name('index');
+
 Route::get('/about', [ShopController::class, 'about'])->name('about');
+
 Route::get('/contact', [ShopController::class, 'contact'])->name('contact');
+
 Route::get('/products', [ShopController::class, 'products'])->name('products');
+
 Route::get('/product', [ShopController::class, 'product'])->name('product');
+
+Route::get('/product/{id}', [ShopController::class, 'productid'])->name('productId');
+
+
 Route::get('/cart', [ShopController::class, 'cart'])->name('cart');
