@@ -37,7 +37,7 @@ class ShopController extends Controller
     {
         $product = Product::where('id', $id)->first();
 
-        return view('products.product',['product'=>$product],['']);
+        return view('products.product',['product'=>$product]);
     }
 
     public function cart()
