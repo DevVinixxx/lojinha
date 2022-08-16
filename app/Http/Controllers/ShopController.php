@@ -34,7 +34,7 @@ class ShopController extends Controller
 
     public function productid($id)
     {
-        $product = Products::where('id', $id)->with('commands')->first();
+        $product = product::where('id', $id)->with('commands')->first();
 
         return view('products.product',['product'=>$product],['']);
     }
