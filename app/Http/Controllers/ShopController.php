@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use App\Models\Products;
 use Illuminate\Http\Request;
 
@@ -34,7 +35,7 @@ class ShopController extends Controller
 
     public function productid($id)
     {
-        $product = product::where('id', $id)->with('commands')->first();
+        $product = Product::where('id', $id)->first();
 
         return view('products.product',['product'=>$product],['']);
     }
