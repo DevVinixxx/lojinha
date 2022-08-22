@@ -28,7 +28,7 @@ class ProductController extends Controller
         $product->status = $request->status;
         $product->save();
 
-        return view('products.index');
+        return redirect()->route('products');;
     }
 
     /**

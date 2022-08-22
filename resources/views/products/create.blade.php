@@ -15,11 +15,11 @@
                                 <div class="col-md-12">
                                     <div class="form-group mb-3">
                                         <label for="title">Nome</label>
-                                        <input type="text" class="form-control mt-1" id="title" name="title">
+                                        <input type="text" required="required" class="form-control mt-1" id="title" name="title">
                                     </div>
                                     <div class="form-group mb-3">
                                         <label for="title">Valor</label>
-                                        <input type="number" class="form-control mt-1" id="amount" name="amount">
+                                        <input type="number" required="required" class="form-control mt-1" id="amount" name="amount">
                                     </div>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@
                                     </div>
                                     <div class="form-group mb-3">
                                         <label for="qtd">Quantidade</label>
-                                        <input type="number" class="form-control mt-1" id="qtd" name="qtd">
+                                        <input type="number" required="required" class="form-control mt-1" id="qtd" name="qtd">
                                     </div>
                                 </div>
 
@@ -61,15 +61,20 @@
                                     </div>
                                     <div class="form-group mb-3">
                                         <label for="title">Imagem</label>
-                                        <input type="image" class="form-control mt-1" id="title" name="title">
+                                        <input type="image" class="form-control mt-1" id="img" name="img">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-12">
+                        <div class="col-md-4">
+                            <label for="size">Tamanho</label>
+                            <input type="text" class="form-control" id="size">
+                        </div>
+
+                        <div class="col-md-8">
                             <label for="inputmessage">Descrição</label>
-                            <textarea class="form-control mt-1" id="description" name="description" rows="6"></textarea>
+                            <textarea required="required" class="form-control mt-1" id="description" name="description" rows="6"></textarea>
                         </div>
 
                         
