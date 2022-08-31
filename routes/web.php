@@ -24,13 +24,11 @@ Route::get('/contact', [ShopController::class, 'contact'])->name('contact');
 
 Route::get('/products', [ShopController::class, 'products'])->name('products');
 
-Route::get('/product', [ShopController::class, 'product'])->name('product');
-
 Route::get('/product/create',[ProductController::class, 'create'])->name('create');
 
 Route::post('/product/create', [ProductController::class, 'store'])->name('store');
 
-Route::get('/product/{id}', [ShopController::class, 'productid'])->name('productId');
+Route::get('/product/{id}', [ShopController::class, 'product'])->name('product');
 
 
 Route::get('/cart', [ShopController::class, 'cart'])->name('cart');

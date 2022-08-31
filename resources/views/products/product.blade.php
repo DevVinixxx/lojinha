@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="">
+    <div class="content-body">
         <section class="bg-light">
             <div class="container pb-5">
                 <div class="row">
@@ -27,7 +27,7 @@
                                         <div class="row">
                                             <div class="col-4">
                                                 <a href="#">
-                                                    <img class="card-img img-fluid" src="{{asset('img/store/product_single_01.jpg')}}" alt="Product Image 1">
+                                                    <img class="card-img img-fluid" src="/img/products/{{$product->img}}" alt="Product Image 1">
                                                 </a>
                                             </div>
                                             <div class="col-4">
@@ -43,50 +43,7 @@
                                         </div>
                                     </div>
                                     <!--/.First slide-->
-    
-                                    <!--Second slide-->
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{asset('img/store/product_single_04.jpg')}}" alt="Product Image 4">
-                                                </a>
-                                            </div>
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{asset('img/store/product_single_05.jpg')}}" alt="Product Image 5">
-                                                </a>
-                                            </div>
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{asset('img/store/product_single_06.jpg')}}" alt="Product Image 6">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--/.Second slide-->
-    
-                                    <!--Third slide-->
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{asset('img/store/product_single_07.jpg')}}" alt="Product Image 7">
-                                                </a>
-                                            </div>
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{asset('img/store/product_single_08.jpg')}}" alt="Product Image 8">
-                                                </a>
-                                            </div>
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{asset('img/store/product_single_09.jpg')}}" alt="Product Image 9">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--/.Third slide-->
+
                                 </div>
                                 <!--End Slides-->
                             </div>
@@ -105,19 +62,11 @@
                     <div class="col-lg-7 mt-5">
                         <div class="card">
                             <div class="card-body">
-                                <h1 class="h2">Active Wear</h1>
-                                <p class="h3 py-2">$25.00</p>
-                                <p class="py-2">
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-secondary"></i>
-                                    <span class="list-inline-item text-dark">Rating 4.8 | 36 Comments</span>
-                                </p>
+                                <h1 class="h2">{{$product->title}}</h1>
+                                <p class="h3 py-2">R$ {{$product->amount}}</p>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
-                                        <h6>Brand:</h6>
+                                        <h6>Marca: </h6>
                                     </li>
                                     <li class="list-inline-item">
                                         <p class="text-muted"><strong>Easy Wear</strong></p>
@@ -125,17 +74,17 @@
                                 </ul>
     
                                 <h6>Description:</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse. Donec condimentum elementum convallis. Nunc sed orci a diam ultrices aliquet interdum quis nulla.</p>
+                                <p>{{$product->description}}</p>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
-                                        <h6>Avaliable Color :</h6>
+                                        <h6>Cores Disponiveis: </h6>
                                     </li>
                                     <li class="list-inline-item">
                                         <p class="text-muted"><strong>White / Black</strong></p>
                                     </li>
                                 </ul>
     
-                                <h6>Specification:</h6>
+                                <h6>Especificações:</h6>
                                 <ul class="list-unstyled pb-3">
                                     <li>Lorem ipsum dolor sit</li>
                                     <li>Amet, consectetur</li>
@@ -151,7 +100,7 @@
                                     <div class="row">
                                         <div class="col-auto">
                                             <ul class="list-inline pb-3">
-                                                <li class="list-inline-item">Size :
+                                                <li class="list-inline-item">Tamanhos:
                                                     <input type="hidden" name="product-size" id="product-size" value="S">
                                                 </li>
                                                 <li class="list-inline-item"><span class="btn btn-success btn-size">S</span></li>
@@ -163,7 +112,7 @@
                                         <div class="col-auto">
                                             <ul class="list-inline pb-3">
                                                 <li class="list-inline-item text-right">
-                                                    Quantity
+                                                    Quantidade
                                                     <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                                 </li>
                                                 <li class="list-inline-item"><span class="btn btn-success" id="btn-minus">-</span></li>
@@ -174,10 +123,10 @@
                                     </div>
                                     <div class="row pb-3">
                                         <div class="col d-grid">
-                                            <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Buy</button>
+                                            <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Comprar</button>
                                         </div>
                                         <div class="col d-grid">
-                                            <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Add To Cart</button>
+                                            <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Adicionar ao carrinho</button>
                                         </div>
                                     </div>
                                 </form>
