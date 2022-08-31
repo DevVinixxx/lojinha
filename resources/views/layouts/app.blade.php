@@ -142,10 +142,10 @@
 
             <div class="row text-light mb-4">
                 <hr>
-                <div class="col-md-12 text-center">
+                <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-3">
-                            <ul class="list-inline  footer-icons mt-5">
+                        <div class="col-md-8">
+                            <ul class="list-inline  footer-icons">
                                 <li class="list-inline-item border border-light rounded-circle text-center">
                                     <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
                                 </li>
@@ -161,11 +161,8 @@
                             </ul>
                             
                         </div>
-                        <div class="col-md-5 mt-0">
-                            <img src="{{asset('img/siteseguro.png')}}" alt="secure site" width="80%" height="80%">
-                        </div>
-                        <div class="col-md-4 mt-0">
-                            <img src="{{asset('img/nortonseal.png')}}" alt="norton"  width="80%" height="80%">
+                        <div class="col-md-4">
+                            <img src="{{asset('img/siteseguro.png')}}"alt="secure site" width="90%" height="90%">
                         </div>
                     </div>
                 </div>
