@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@section('title','Fale Conosco')
 @section('content')
     <div class="">
         <div class="container-fluid bg-light py-5">

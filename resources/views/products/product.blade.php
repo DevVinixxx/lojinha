@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@section('title','Produto')
 @section('content')
     <div class="">
         <section class="bg-light">

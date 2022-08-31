@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@section('title','Sobre Nós')
 @section('content')
     <div class="">
         <section class="bg-secondary py-5">

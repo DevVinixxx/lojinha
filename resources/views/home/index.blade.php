@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@section('title','Home Page')
 @section('content')
     <div class="">
         <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">

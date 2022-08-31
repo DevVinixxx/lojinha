@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@section('title', 'Criar produto')
 @section('content')
     <div class="container-fluid">
         <div class="py-5">

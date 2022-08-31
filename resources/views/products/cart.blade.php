@@ -1,7 +1,6 @@
 @extends('layouts.app')
-@section('title','Carrinho')
 @section('content')
     <div>
-        
+        <h1>tela do carrinho</h1>
     </div>
 @endsection
