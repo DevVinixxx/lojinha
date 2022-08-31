@@ -73,7 +73,7 @@
                         <div class="col-md-4">
                             <div class="card mb-4 product-wap ">
                                 <div class="card ">
-                                    <a href="{{ Route('product') }}"><img class="card-img rounded-0 img-fluid" src="{{asset('img/shop_01.jpg')}}"></a>
+                                    <a href="{{ Route('product') }}"><img class="card-img rounded-0 img-fluid" src="{{asset('img/store/shop_01.jpg')}}"></a>
                                 </div>
                                 <div class="card-body text-center">
                                     <h4> Title </h4>
@@ -131,16 +131,16 @@
                                         <div class="carousel-item active">
                                             <div class="row">
                                                 <div class="col-3 p-md-5">
-                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/brand_01.pn')}}g" alt="Brand Logo"></a>
+                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/store/brand_01.pn')}}g" alt="Brand Logo"></a>
                                                 </div>
                                                 <div class="col-3 p-md-5">
-                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/brand_02.pn')}}g" alt="Brand Logo"></a>
+                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/store/brand_02.pn')}}g" alt="Brand Logo"></a>
                                                 </div>
                                                 <div class="col-3 p-md-5">
-                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/brand_03.pn')}}g" alt="Brand Logo"></a>
+                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/store/brand_03.pn')}}g" alt="Brand Logo"></a>
                                                 </div>
                                                 <div class="col-3 p-md-5">
-                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/brand_04.pn')}}g" alt="Brand Logo"></a>
+                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/store/brand_04.pn')}}g" alt="Brand Logo"></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -150,16 +150,16 @@
                                         <div class="carousel-item">
                                             <div class="row">
                                                 <div class="col-3 p-md-5">
-                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/brand_01.pn')}}g" alt="Brand Logo"></a>
+                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/store/brand_01.pn')}}g" alt="Brand Logo"></a>
                                                 </div>
                                                 <div class="col-3 p-md-5">
-                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/brand_02.pn')}}g" alt="Brand Logo"></a>
+                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/store/brand_02.pn')}}g" alt="Brand Logo"></a>
                                                 </div>
                                                 <div class="col-3 p-md-5">
-                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/brand_03.pn')}}g" alt="Brand Logo"></a>
+                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/store/brand_03.pn')}}g" alt="Brand Logo"></a>
                                                 </div>
                                                 <div class="col-3 p-md-5">
-                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/brand_04.pn')}}g" alt="Brand Logo"></a>
+                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/store/brand_04.pn')}}g" alt="Brand Logo"></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -169,16 +169,16 @@
                                         <div class="carousel-item">
                                             <div class="row">
                                                 <div class="col-3 p-md-5">
-                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/brand_01.pn')}}g" alt="Brand Logo"></a>
+                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/store/brand_01.pn')}}g" alt="Brand Logo"></a>
                                                 </div>
                                                 <div class="col-3 p-md-5">
-                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/brand_02.pn')}}g" alt="Brand Logo"></a>
+                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/store/brand_02.pn')}}g" alt="Brand Logo"></a>
                                                 </div>
                                                 <div class="col-3 p-md-5">
-                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/brand_03.pn')}}g" alt="Brand Logo"></a>
+                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/store/brand_03.pn')}}g" alt="Brand Logo"></a>
                                                 </div>
                                                 <div class="col-3 p-md-5">
-                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/brand_04.pn')}}g" alt="Brand Logo"></a>
+                                                    <a href="#"><img class="img-fluid brand-img" src="{{asset('img/store/brand_04.pn')}}g" alt="Brand Logo"></a>
                                                 </div>
                                             </div>
                                         </div>

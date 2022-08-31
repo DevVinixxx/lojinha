@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('title', 'Vini Store')</title>
-    <link rel = "icon" href ="{{asset('img/vs.png')}}" type = "image/x-icon">
+    <link rel = "icon" href ="{{asset('img/store/vs.png')}}" type = "image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
@@ -27,7 +27,7 @@
                 </div>
                 <div>
                     <a class="text-light" href="http://facebook.com/" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/pereeeezxx/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/euperesvinix/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
                 </div>
@@ -39,7 +39,7 @@
             <div class="container d-flex justify-content-between align-items-center">
     
                 <a href="{{Route('index')}}">
-                    <img src="{{asset('img/logovini.png')}}" alt="logo" height="70px">
+                    <img src="{{asset('img/store/logovini.png')}}" alt="logo" height="70px">
                 </a>
     
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -150,7 +150,7 @@
                                     <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
                                 </li>
                                 <li class="list-inline-item border border-light rounded-circle text-center">
-                                    <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/pereeeezxx/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                                    <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/euperesvinix/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
                                 </li>
                                 <li class="list-inline-item border border-light rounded-circle text-center">
                                     <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
@@ -162,7 +162,7 @@
                             
                         </div>
                         <div class="col-md-4">
-                            <img src="{{asset('img/siteseguro.png')}}"alt="secure site" width="90%" height="90%">
+                            <img src="{{asset('img/store/siteseguro.png')}}"alt="secure site" width="90%" height="90%">
                         </div>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                     <div class="col-12">
                         <p class="text-left text-light">
                              2022 
-                            | Designed by @<a rel="sponsored" href="https://www.instagram.com/pereeeezxx/" target="_blank">Vinícius Peres</a>
+                            | Designed by @<a rel="sponsored" href="https://www.instagram.com/euperesvinix/" target="_blank">Vinícius Peres</a>
                         </p>
                     </div>
                 </div>
