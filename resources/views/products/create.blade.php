@@ -6,7 +6,7 @@
                 <div class="text-center">
                     <h3>Criar Produto</h3>
                 </div>
-                <form action="{{route('store')}}" class="col-md-9 m-auto" method="post" role="form">
+                <form action="{{route('store')}}" class="col-md-9 m-auto" method="post" role="form" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-md-4">
@@ -59,8 +59,8 @@
                                         </select>
                                     </div>
                                     <div class="form-group mb-3">
-                                        <label for="title">Imagem</label>
-                                        <input type="image" class="form-control mt-1" id="img" name="img">
+                                        <label for="img">Imagem do produto</label>
+                                        <input type="file" class="form-control mt-1" required  accept="image/*" id="img" name="img">
                                     </div>
                                 </div>
                             </div>
@@ -68,11 +68,11 @@
 
                         <div class="col-md-4">
                             <label for="size">Tamanho</label>
-                            <input type="text" class="form-control" id="size">
+                            <input type="text" class="form-control" name="size" id="size">
                         </div>
 
                         <div class="col-md-8">
-                            <label for="inputmessage">Descrição</label>
+                            <label for="description">Descrição</label>
                             <textarea required="required" class="form-control mt-1" id="description" name="description" rows="6"></textarea>
                         </div>
 

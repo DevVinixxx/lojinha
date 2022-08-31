@@ -32,6 +32,23 @@ class ProductController extends Controller
         $product->amount = $request->amount;
         $product->qtd = $request->qtd;
         $product->status = $request->status;
+
+        //upload de imagem
+        if($request->hasFile('img') && $request->file('img')->isValid()){
+            
+            $image = $request->img;
+
+            $extension = $image->extension();
+
+            $imageName = md5($image->getClientOriginalName() . strtotime("now")) . "." . $extension;
+
+            $image->move(public_path('img/products'), $imageName);
+
+            $product->img = $imageName;
+
+        }
+
+
         $product->save();
 
         return redirect()->route('products');;
@@ -45,6 +62,8 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $product = Product::find($id);
+        $product->delete();
+        return redirect()->route('index');
     }
 }
