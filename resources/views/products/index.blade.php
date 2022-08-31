@@ -68,106 +68,23 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
+                        
                         <div class="col-md-4">
-                            <div class="card mb-4 product-wap rounded-0">
-                                <div class="card rounded-0">
+                            <div class="card mb-4 product-wap ">
+                                <div class="card ">
                                     <a href="{{ Route('product') }}"><img class="card-img rounded-0 img-fluid" src="{{asset('img/shop_01.jpg')}}"></a>
                                 </div>
-                                <div class="card-body">
-                                    <span>Oupidatat non</span>
-                                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                        <li>M/L/X/XL</li>
-                                     
-                                    </ul>
-                                    <ul class="list-unstyled d-flex justify-content-center mb-1">
-                                        <li>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-muted fa fa-star"></i>
-                                            <i class="text-muted fa fa-star"></i>
-                                        </li>
-                                    </ul>
-                                    <p class="text-center mb-0">BRL 450,00</p>
+                                <div class="card-body text-center">
+                                    <h4> Title </h4>
+                                    <p> Resumo </p>
+                                    <p>BRL 450,00</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="card mb-4 product-wap rounded-0">
-                                <div class="card rounded-0">
-                                    <a href="{{ Route('product') }}"><img class="card-img rounded-0 img-fluid" src="{{asset('img/shop_02.jpg')}}"></a>
-                                </div>
-                                <div class="card-body">
-                                    <span>Oupidatat non</span>
-                                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                        <li>M/L/X/XL</li>
-                                     
-                                    </ul>
-                                    <ul class="list-unstyled d-flex justify-content-center mb-1">
-                                        <li>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-muted fa fa-star"></i>
-                                            <i class="text-muted fa fa-star"></i>
-                                        </li>
-                                    </ul>
-                                    <p class="text-center mb-0">BRL 450,00</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="card mb-4 product-wap rounded-0">
-                                <div class="card rounded-0">
-                                    <a href="{{ Route('product') }}"><img class="card-img rounded-0 img-fluid" src="{{asset('img/shop_03.jpg')}}"></a>
-                                </div>
-                                <div class="card-body">
-                                    <span>Oupidatat non</span>
-                                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                        <li>M/L/X/XL</li>
-                                     
-                                    </ul>
-                                    <ul class="list-unstyled d-flex justify-content-center mb-1">
-                                        <li>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-muted fa fa-star"></i>
-                                            <i class="text-muted fa fa-star"></i>
-                                        </li>
-                                    </ul>
-                                    <p class="text-center mb-0">BRL 450,00</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="card mb-4 product-wap rounded-0">
-                                <div class="card rounded-0">
-                                    <a href="{{ Route('product') }}"><img class="card-img rounded-0 img-fluid" src="{{asset('img/shop_04.jpg')}}"></a>
-                                </div>
-                                <div class="card-body">
-                                    <span>Oupidatat non</span>
-                                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                        <li>M/L/X/XL</li>
-                                     
-                                    </ul>
-                                    <ul class="list-unstyled d-flex justify-content-center mb-1">
-                                        <li>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-muted fa fa-star"></i>
-                                            <i class="text-muted fa fa-star"></i>
-                                        </li>
-                                    </ul>
-                                    <p class="text-center mb-0">BRL 450,00</p>
-                                </div>
-                            </div>
-                        </div>
+                    
                     <div div="row">
                         <ul class="pagination pagination-lg justify-content-end">
                             <li class="page-item disabled">
@@ -182,7 +99,6 @@
                         </ul>
                     </div>
                 </div>
-    
             </div>
         </div>
 

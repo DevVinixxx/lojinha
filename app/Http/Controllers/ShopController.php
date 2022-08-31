@@ -10,7 +10,9 @@ class ShopController extends Controller
 {
     public function index()
     {
-        return view('home.index');
+        $products = Product::all();
+
+        return view('home.index', ['products' => $products]);
     }
 
     public function about()
