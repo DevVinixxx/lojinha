@@ -30,11 +30,12 @@ class ShopController extends Controller
         return view('products.index');
     }
 
-    public function product($id)
-    {
+    public function show($id){
+        
         $product = Product::where('id', $id)->first();
 
         return view('products.product',['product'=>$product]);
+
     }
 
     public function cart()
