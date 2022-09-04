@@ -29,16 +29,17 @@ class ProductController extends Controller
         $product->title = $request->title;
         $product->category = $request->category;
         $product->description = $request->description;
+        $product->color = $request->color;
+        $product->size = $request->size;
+        $product->particulars = $request->particulars;
         $product->amount = $request->amount;
         $product->qtd = $request->qtd;
         $product->status = $request->status;
-
         //upload de imagem
-        if($request->hasFile('img') && $request->file('img')->isValid()){
+        if($request->hasFile('image') && $request->file('image')->isValid()){
            
-            $image = $request->img->store('pasta');
+            $image = $request->image->store('pasta');
         }
-
 
         $product->save();
 
