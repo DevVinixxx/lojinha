@@ -35,17 +35,8 @@ class ProductController extends Controller
 
         //upload de imagem
         if($request->hasFile('img') && $request->file('img')->isValid()){
-            
-            $image = $request->img;
-
-            $extension = $image->extension();
-
-            $imageName = md5($image->getClientOriginalName() . strtotime("now")) . "." . $extension;
-
-            $image->move(public_path('img/products'), $imageName);
-
-            $product->img = $imageName;
-
+           
+            $image = $request->img->store('pasta');
         }
 
 

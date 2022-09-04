@@ -16,12 +16,16 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->bigInteger('category');
-            $table->string('img')->nullable();
-            $table->longText('description')->nullable();
+            $table->string('color');
+            $table->string('category');
+            $table->string('image');
+            $table->string('size');
+            $table->string('particulars');
+            $table->string('brand');
+            $table->longText('description');
+            $table->integer('qtd');
             $table->integer('amount');
-            $table->integer('qtd')->default('1');
-            $table->enum('status',['available','unavailable'])->default('unavailable');
+            $table->enum('status', ['available', 'unavailable'])->default('unavailable');
             $table->timestamps();
         });
     }

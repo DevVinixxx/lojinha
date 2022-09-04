@@ -84,7 +84,7 @@
                                         </li>
                                     </ul>
         
-                                    <h6>Especificações:</h6>
+                                    <h6>Caracteristicas:</h6>
                                     <ul class="list-unstyled pb-3">
                                         <li>Lorem ipsum dolor sit</li>
                                         <li>Amet, consectetur</li>
