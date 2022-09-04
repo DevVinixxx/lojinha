@@ -10,9 +10,7 @@ class ShopController extends Controller
 {
     public function index()
     {
-        $products = Product::all();
-
-        return view('home.index', ['products' => $products]);
+        return view('home.index');
     }
 
     public function about()
@@ -30,11 +28,9 @@ class ShopController extends Controller
         return view('products.index');
     }
 
-    public function show($id){
-        
-        $product = Product::where('id', $id)->first();
+    public function show(){
 
-        return view('products.product',['product'=>$product]);
+        return view('products.product');
 
     }
 

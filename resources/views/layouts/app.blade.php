@@ -51,13 +51,14 @@
                         <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{Route('index')}}">Home</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{Route('products')}}">Shopping</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{Route('about')}}">Sobre Nós</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{Route('products')}}">Shopping</a>
-                            </li>
+                           
                             <li class="nav-item">
                                 <a class="nav-link" href="{{Route('contact')}}">Contato</a>
                             </li>

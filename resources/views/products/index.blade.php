@@ -69,19 +69,21 @@
                     </div>
 
                     <div class="row">
-                        
-                        <div class="col-md-4">
-                            <div class="card mb-4 product-wap ">
-                                <div class="card ">
-                                    <a href="{{ Route('product') }}"><img class="card-img rounded-0 img-fluid" src="{{asset('img/store/shop_01.jpg')}}"></a>
-                                </div>
-                                <div class="card-body text-center">
-                                    <h4> Title </h4>
-                                    <p> Resumo </p>
-                                    <p>BRL 450,00</p>
+                      
+                            <div class="col-md-4">
+                                <div class="card mb-4 product-wap ">
+                                    <div class="card ">
+                                        <a href="{{route('product')}}"><img class="card-img rounded-0 img-fluid" src="{{asset('img/store/shop_01.jpg')}}"></a>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4> Title </h4>
+                                        <p> Resumo </p>
+                                        <p>BRL 450,00</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        
+                        
 
                     
                     <div div="row">
