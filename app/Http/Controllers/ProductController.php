@@ -10,7 +10,10 @@ class ProductController extends Controller
 
     public function index(){
 
-        return view('products.index');
+        $products = Product::all();
+
+        return view('products.index', ['products' => $products]);
+
     }
 
     /**
@@ -21,6 +24,14 @@ class ProductController extends Controller
     public function create(Request $request)
     {
         return view('products.create');
+    }
+
+    public function show($id){
+        
+        $product = Product::findOrFail($id);
+
+        return view('products.product', ['product'=>$product]);
+
     }
 
     public function store(Request $request)

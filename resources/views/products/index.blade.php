@@ -41,7 +41,7 @@
                         </li>
                     </ul>
                 </div>
-    
+
                 <div class="col-lg-9">
                     <div class="row">
                         <div class="col-md-6">
@@ -69,22 +69,19 @@
                     </div>
 
                     <div class="row">
-                      
+                        @foreach ($products as $product)
                             <div class="col-md-4">
                                 <div class="card mb-4 product-wap ">
                                     <div class="card ">
-                                        <a href="{{route('product')}}"><img class="card-img rounded-0 img-fluid" src="{{asset('img/store/shop_01.jpg')}}"></a>
+                                        <a href="{{route('product',$product->id)}}"><img class="card-img rounded-0 img-fluid" src="{{$product->image}}" alt="{{$product->title}}"></a>
                                     </div>
                                     <div class="card-body text-center">
-                                        <h4> Title </h4>
-                                        <p> Resumo </p>
-                                        <p>BRL 450,00</p>
+                                        <h4> {{$product->title}} </h4>
+                                        <p> {{$product->amount}} </p>
                                     </div>
                                 </div>
                             </div>
-                        
-                        
-
+                        @endforeach  
                     
                     <div div="row">
                         <ul class="pagination pagination-lg justify-content-end">
