@@ -28,6 +28,6 @@ Route::get('/product/create',[ProductController::class, 'create'])->name('create
 
 Route::post('/product/create', [ProductController::class, 'store'])->name('store');
 
-Route::get('/product/{id}', [ProductController::class, 'show'])->name('product');
+Route::get('/product/{id?}/', [ProductController::class, 'show'])->name('product');
 
 Route::get('/cart', [ShopController::class, 'cart'])->name('cart');
