@@ -62,7 +62,7 @@ class ProductController extends Controller
                 foreach($files as $file){
                     $imageName=time().'_'.$file->getClientOriginalName();
                     $request['product_id']=$product->id;
-                    $request['image']=$imageName;
+                    $request['images']=$imageName;
                     $file->move(\public_path("/images"),$imageName);
                     Image::create($request->all());
 
