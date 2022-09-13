@@ -31,7 +31,7 @@ class ProductController extends Controller
         
         $product = Product::findOrFail($id);
 
-        return view('products.product', ['product'=>$product]);
+        return view('products.product')->with('product', $product);
 
     }
 
@@ -41,8 +41,6 @@ class ProductController extends Controller
             $file=$request->file("capa");
             $imageName=time().'_'.$file->getClientOriginalName();
             $file->move(\public_path("capa/"),$imageName);
-
-    
 
             $product = new Product;
             $product->title = $request->title;
@@ -57,24 +55,21 @@ class ProductController extends Controller
             $product->status = $request->status;
             $product->capa = $file;
 
+            $product->save();
+
             if($request->hasFile("images")){
                 $files=$request->file("images");
                 foreach($files as $file){
                     $imageName=time().'_'.$file->getClientOriginalName();
                     $request['product_id']=$product->id;
-                    $request['images']=$imageName;
-                    $file->move(\public_path("/images"),$imageName);
+                    $request['image']=$imageName;
+                    $file->move(\public_path("/prods"),$imageName);
                     Image::create($request->all());
-
                 }
             }
-
-
-           $product->save();
         }
-
-            
-
+       
+        return redirect()->route('products');
             //upload de imagem
             //if($request->hasFile('image') && $request->file('image')->isValid()){
             
@@ -82,8 +77,6 @@ class ProductController extends Controller
 
             //  $product->image = $image;
             //}
-
-        return redirect()->route('products');;
     }
 
     /**

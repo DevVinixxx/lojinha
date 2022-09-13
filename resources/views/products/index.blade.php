@@ -73,11 +73,11 @@
                             <div class="col-md-4">
                                 <div class="card mb-4 product-wap ">
                                     <div class="card ">
-                                        <a href="{{route('product',$product->id)}}"><img class="card-img rounded-0 img-fluid" src="{{$product->image}}" alt="{{$product->title}}"></a>
+                                        <a href="{{route('product',$product->id)}}"><img class="card-img rounded-0 img-fluid" src="capa/{{$product->capa}}" alt="{{$product->title}}"></a>
                                     </div>
                                     <div class="card-body text-center">
                                         <h4> {{$product->title}} </h4>
-                                        <p> {{$product->amount}} </p>
+                                        <p>R$ {{$product->amount}} </p>
                                     </div>
                                 </div>
                             </div>

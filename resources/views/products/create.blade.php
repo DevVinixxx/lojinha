@@ -47,11 +47,11 @@
                             <label for="amount">Valor</label>
                             <input type="number" class="form-control" name="amount" id="amount" placeholder="Preço do produto">
 
-                            <label for="image">Foto de capa</label>
+                            <label for="capa">Foto de capa</label>
                             <input type="file" name="capa" id="capa" class="form-control" accept="image/*">
 
-                            <label for="image">Fotos do produto</label>
-                            <input type="file" name="images" id="images" class="form-control" accept="image/*" multiple>
+                            <label for="images">Fotos do produto</label>
+                            <input type="file" name="images[]" class="form-control" accept="image/*" multiple>
 
                             
                         </div>
