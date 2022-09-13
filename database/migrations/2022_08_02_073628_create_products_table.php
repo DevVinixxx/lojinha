@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('color');
             $table->string('category');
-            $table->string('image');
+            $table->string('capa');
             $table->string('size');
             $table->string('particulars');
             $table->string('brand');

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Image;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -36,26 +37,51 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        $product = new Product;
-        $product->title = $request->title;
-        $product->category = $request->category;
-        $product->description = $request->description;
-        $product->color = $request->color;
-        $product->brand = $request->brand;
-        $product->size = $request->size;
-        $product->particulars = $request->particulars;
-        $product->amount = $request->amount;
-        $product->qtd = $request->qtd;
-        $product->status = $request->status;
-        //upload de imagem
-        if($request->hasFile('image') && $request->file('image')->isValid()){
-           
-            $image = $request->image->store('img/products');
+        if($request->hasFile("capa")){
+            $file=$request->file("capa");
+            $imageName=time().'_'.$file->getClientOriginalName();
+            $file->move(\public_path("capa/"),$imageName);
 
-            $product->image = $image;
+    
+
+            $product = new Product;
+            $product->title = $request->title;
+            $product->category = $request->category;
+            $product->description = $request->description;
+            $product->color = $request->color;
+            $product->brand = $request->brand;
+            $product->size = $request->size;
+            $product->particulars = $request->particulars;
+            $product->amount = $request->amount;
+            $product->qtd = $request->qtd;
+            $product->status = $request->status;
+            $product->capa = $file;
+
+            if($request->hasFile("images")){
+                $files=$request->file("images");
+                foreach($files as $file){
+                    $imageName=time().'_'.$file->getClientOriginalName();
+                    $request['product_id']=$product->id;
+                    $request['image']=$imageName;
+                    $file->move(\public_path("/images"),$imageName);
+                    Image::create($request->all());
+
+                }
+            }
+
+
+           $product->save();
         }
 
-        $product->save();
+            
+
+            //upload de imagem
+            //if($request->hasFile('image') && $request->file('image')->isValid()){
+            
+            //  $image = $request->image->store('img/products');
+
+            //  $product->image = $image;
+            //}
 
         return redirect()->route('products');;
     }
