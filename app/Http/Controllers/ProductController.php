@@ -37,24 +37,10 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        // Define o valor default para a variável que contém o nome da imagem 
-        $nameFile = null;
-    
-        // Verifica se informou o arquivo e se é válido
-        if ($request->hasFile('capa') && $request->file('capa')->isValid()) {
-            
-            // Define um aleatório para o arquivo baseado no timestamps atual
-            $name = uniqid(date('HisYmd'));
-    
-            // Recupera a extensão do arquivo
-            $extension = $request->capa->extension();
-    
-            // Define finalmente o nome
-            $nameFile = "{$name}.{$extension}";
-    
-            // Faz o upload:
-            $upload = $request->capa->storeAs('capa', $nameFile);
-            // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
+        if($request->hasFile("capa")){
+            $file=$request->file("capa");
+            $imageName=time().'_'.$file->getClientOriginalName();
+            $file->move(\public_path("capa/"),$imageName);
 
             $product = new Product;
             $product->title = $request->title;
@@ -67,24 +53,24 @@ class ProductController extends Controller
             $product->amount = $request->amount;
             $product->qtd = $request->qtd;
             $product->status = $request->status;
-            $product->capa = $upload;
+            $product->capa = $file;
 
             $product->save();
-
-            if($request->hasFile("images")){
-                $files=$request->file("images");
-                foreach($files as $file){
-                    $imageName=time().'_'.$file->getClientOriginalName();
-                    $request['product_id']=$product->id;
-                    $request['image']=$imageName;
-                    $file->move(\public_path("/prods"),$imageName);
-                    Image::create($request->all());
-                }
-            }
-
-            return redirect()->route('products');
-    
         }
+
+        if($request->hasFile("images")){
+            $files=$request->file("images");
+            foreach($files as $file){
+                $imageName=time().'_'.$file->getClientOriginalName();
+                $request['product_id']=$product->id;
+                $request['image']=$imageName;
+                $file->move(\public_path("/prods"),$imageName);
+                Image::create($request->all());
+            }
+        }
+
+        return redirect()->route('products');
+    
     }
 
     /**
