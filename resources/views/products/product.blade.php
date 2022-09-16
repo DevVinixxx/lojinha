@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-lg-5 mt-5">                   
                         <div class="card mb-3">
-                            <img class="card-img img-fluid" src="{{asset('img/store/product_single_10.jpg')}}" alt="Card image cap" id="product-detail">
+                            <img class="card-img img-fluid" src="{{ url("storage/capa/{$product->capa}") }}" alt="{{$product->title}}" id="product-detail">
                         </div>
                         <div class="row">
                             <!--Start Controls-->
@@ -46,7 +46,7 @@
                                 </div>
                                 <!--End Slides-->
                             </div>
-                            <!--End Carousel Wrapper-->
+                            <!--End Carousel Wrapper-->''
                             <!--Start Controls-->
                             <div class="col-1 align-self-center">
                                 <a href="#multi-item-example" role="button" data-bs-slide="next">
@@ -69,7 +69,7 @@
                                     </li>
                                 </ul>
     
-                                <h6>Description:</h6>
+                                <h6>Descrição:</h6>
                                 <p> {{$product->description}} </p>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
@@ -93,10 +93,10 @@
                                                 <li class="list-inline-item">Tamanhos:
                                                     <input type="hidden" name="product-size" id="product-size" value="S">
                                                 </li>
-                                                <li class="list-inline-item"><span class="btn btn-success btn-size">S</span></li>
+                                                <li class="list-inline-item"><span class="btn btn-success btn-size">P</span></li>
                                                 <li class="list-inline-item"><span class="btn btn-success btn-size">M</span></li>
-                                                <li class="list-inline-item"><span class="btn btn-success btn-size">L</span></li>
-                                                <li class="list-inline-item"><span class="btn btn-success btn-size">XL</span></li>
+                                                <li class="list-inline-item"><span class="btn btn-success btn-size">G</span></li>
+                                                <li class="list-inline-item"><span class="btn btn-success btn-size">GG</span></li>
                                             </ul>
                                         </div>
                                         <div class="col-auto">

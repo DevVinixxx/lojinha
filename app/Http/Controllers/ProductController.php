@@ -37,11 +37,24 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        if($request->hasFile("capa")){
-            $file=$request->file("capa");
-            $imageName=time().'_'.$file->getClientOriginalName();
-            $file->move(\public_path("/capa"),$imageName);
-
+        // Define o valor default para a variável que contém o nome da imagem 
+        $nameFile = null;
+    
+        // Verifica se informou o arquivo e se é válido
+        if ($request->hasFile('capa') && $request->file('capa')->isValid()) {
+            
+            // Define um aleatório para o arquivo baseado no timestamps atual
+            $name = uniqid(date('HisYmd'));
+    
+            // Recupera a extensão do arquivo
+            $extension = $request->capa->extension();
+    
+            // Define finalmente o nome
+            $nameFile = "{$name}.{$extension}";
+    
+            // Faz o upload:
+            $upload = $request->capa->storeAs('capa', $nameFile);
+            // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
 
             $product = new Product;
             $product->title = $request->title;
@@ -54,7 +67,7 @@ class ProductController extends Controller
             $product->amount = $request->amount;
             $product->qtd = $request->qtd;
             $product->status = $request->status;
-            $product->capa = $file;
+            $product->capa = $upload;
 
             $product->save();
 
@@ -68,16 +81,10 @@ class ProductController extends Controller
                     Image::create($request->all());
                 }
             }
-        }
-       
-        return redirect()->route('products');
-            //upload de imagem
-            //if($request->hasFile('image') && $request->file('image')->isValid()){
-            
-            //  $image = $request->image->store('img/products');
 
-            //  $product->image = $image;
-            //}
+            return redirect()->route('products');
+    
+        }
     }
 
     /**
