@@ -13,7 +13,7 @@ class ProductController extends Controller
 
         $products = Product::all();
 
-        return view('products.index', ['products' => $products]);
+        return view('products.index')->with('products',$products);
 
     }
 
@@ -40,7 +40,8 @@ class ProductController extends Controller
         if($request->hasFile("capa")){
             $file=$request->file("capa");
             $imageName=time().'_'.$file->getClientOriginalName();
-            $file->move(\public_path("capa/"),$imageName);
+            $file->move(\public_path("/capa"),$imageName);
+
 
             $product = new Product;
             $product->title = $request->title;
