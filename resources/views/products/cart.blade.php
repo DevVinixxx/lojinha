@@ -1,92 +1,77 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container">
+    <div class="container bg-light p-4">
         <h2>Carrinho de compras</h2>
-        <div class="row p-3">
+        <div class="row">
             <div class="col-md-8">
-                <div class="box">
-                    <div class="box-body">
+                <div class="card">
+                    <div class="card-body">
                         <table class="table">
                             <thead class="list-inline">
-                                <th class="table-inline-item">teste</th>
-                                <th class="table-inline-item">teste</th>
-                                <th class="table-inline-item">teste</th>
-                                <th class="table-inline-item">teste</th>
+                                <th>Item</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                                <th>Subtotal</th>
                             </thead>
         
                             <tbody>
-                                <td class="table-inline-item">teste</td>
-                                <td class="table-inline-item">teste</td>
-                                <td class="table-inline-item">teste</td>
-                                <td class="table-inline-item">teste</td>
+                                <td>Calça Jeans</td>
+                                <td>R$ 99,90</td>
+                                <td> - 1 + </td>
+                                <td>R$ 99,90</td>
                             </tbody>
                         </table>
                     </div>
                 </div>
+
+                <div class="mt-2">
+                    <a href="#" class="btn btn-primary">Continue Comprando</a>
+                    <a href="#" class="btn btn-danger">Limpar carrinho</a>
+                </div>
+
             </div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card p-3">
                     <div class="card-body">
-                        <h1 class="h2">title</h1>
-                        <p class="h3 py-2">R$ </p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <h6>Marca: </h6>
-                            </li>
-                        </ul>
+                        <h1 class="h2 d-flex justify-content-between"> Subtotal <span> R$ 99,99 </span></h1>
+                        <hr>
 
-                        <h6>Descrição:</h6>
-                        <p>sadasdasdasda </p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <h6>Cor do produto: </h6>
-                            </li>
-                            <li class="list-inline-item">
-                                <p class="text-muted"><strong>COR</strong></p>
-                            </li>
-                        </ul>
+                        <div class="d-flex justify-content-between ">
+                            <p class="mt-2">Calcular frete: </p>
+                            <form action="#" method="post" class="col-8">
+                                <input type="text" class="form-control">
+                            </form>
+                        </div>
 
-                        <h6>Caracteristicas:</h6>
-                        <ul class="list-unstyled pb-3">
-                            <li>hiaushdiuashd</li>
-                        </ul>
+                        <div>
+                            <form action="#" method="post" class="">
+                                <div class="mt-1">
+                                    <input type="radio" name="#" id="#">
+                                    <label for="padão">Transportadora padrão - 5 dias úteis </label>
+                                </div>
+                                <div class="mt-1">
+                                    <input type="radio" name="#" id="#">
+                                    <label for="padão">Transportadora padrão - 5 dias úteis </label>
+                                </div>
+                                <div class="mt-1">
+                                    <input type="radio" name="#" id="#">
+                                    <label for="padão">Transportadora padrão - 5 dias úteis </label>
+                                </div>
+                            </form>
+                        </div>
 
-                        <form action="" method="GET">
-                            <input type="hidden" name="product-title" value="Activewear">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <ul class="list-inline pb-3">
-                                        <li class="list-inline-item">Tamanhos:
-                                            <input type="hidden" name="product-size" id="product-size" value="S">
-                                        </li>
-                                        <li class="list-inline-item"><span class="btn btn-success btn-size">P</span></li>
-                                        <li class="list-inline-item"><span class="btn btn-success btn-size">M</span></li>
-                                        <li class="list-inline-item"><span class="btn btn-success btn-size">G</span></li>
-                                        <li class="list-inline-item"><span class="btn btn-success btn-size">GG</span></li>
-                                    </ul>
-                                </div>
-                                <div class="col-auto">
-                                    <ul class="list-inline pb-3">
-                                        <li class="list-inline-item text-right">
-                                            Quantidade
-                                            <input type="hidden" name="product-quanity" id="product-quanity" value="1">
-                                        </li>
-                                        <li class="list-inline-item"><span class="btn btn-success" id="btn-minus">-</span></li>
-                                        <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                        <li class="list-inline-item"><span class="btn btn-success" id="btn-plus">+</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row pb-3">
-                                <div class="col d-grid">
-                                    <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Comprar</button>
-                                </div>
-                                <div class="col d-grid">
-                                    <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Adicionar ao carrinho</button>
-                                </div>
-                            </div>
-                        </form>
+                        <div>
+                            <form action="#" method="post" class="d-flex justify-content-between">
+                                <input type="text" class="form-control m-2" placeholder="Cupom de desconto">
+                                <button class="btn btn-primary m-2">Aplicar</button>
+                            </form>
+                        </div>
+                        <hr>
 
+                        <h1 class="h2 d-flex justify-content-between">Frete  <span>R$ 39,90</span></h1>
+                        <hr>
+                        
+                        <h1 class="h2 d-flex justify-content-between">Total <span>R$ 139,89</span></h1>
                     </div>
                 </div>
             </div>

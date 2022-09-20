@@ -1,9 +1,8 @@
 @extends('layouts.app')
 @section('content')
-    <div class="">
+    <div class="content-body">
         <div class="container py-5">
             <div class="row">
-    
                 <div class="col-lg-3">
                     <h1 class="h2 pb-4">Categories</h1>
                     <ul class="list-unstyled templatemo-accordion">
