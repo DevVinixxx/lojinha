@@ -13,6 +13,7 @@ class ProductController extends Controller
 
         $products = Product::all();
 
+        //dd($products);
         return view('products.index')->with('products',$products);
 
     }
@@ -31,16 +32,19 @@ class ProductController extends Controller
         
         $product = Product::findOrFail($id);
 
-        return view('products.product')->with('product', $product);
+        $prodimages = Image::where('product_id')->first();
 
+        return view('products.product', [
+            'product'=> $product,
+            'prodimages' => $prodimages
+        ]);
     }
 
     public function store(Request $request)
     {
         if($request->hasFile("capa")){
-            $file=$request->file("capa");
-            $imageName=time().'_'.$file->getClientOriginalName();
-            $file->move(\public_path("capa/"),$imageName);
+
+           $file = $request->capa->store('capa');
 
             $product = new Product;
             $product->title = $request->title;

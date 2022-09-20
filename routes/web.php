@@ -18,16 +18,16 @@ use App\Http\Controllers\ShopController;
 
 Route::get('/', [ShopController::class, 'index'])->name('index');
 
-Route::get('/about', [ShopController::class, 'about'])->name('about');
+Route::get('/sobre', [ShopController::class, 'about'])->name('about');
 
-Route::get('/contact', [ShopController::class, 'contact'])->name('contact');
+Route::get('/contato', [ShopController::class, 'contact'])->name('contact');
 
-Route::get('/products', [ProductController::class, 'index'])->name('products');
+Route::get('/produtos', [ProductController::class, 'index'])->name('products');
 
-Route::get('/product/create',[ProductController::class, 'create'])->name('create');
+Route::get('/produto/criar',[ProductController::class, 'create'])->name('create');
 
 Route::post('/product/create', [ProductController::class, 'store'])->name('store');
 
-Route::get('/product/{id?}/', [ProductController::class, 'show'])->name('product');
+Route::get('/produto/{id?}/', [ProductController::class, 'show'])->name('product');
 
-Route::get('/cart', [ShopController::class, 'cart'])->name('cart');
+Route::get('/carrinho', [ShopController::class, 'cart'])->name('cart');

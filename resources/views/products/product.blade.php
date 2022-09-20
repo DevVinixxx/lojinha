@@ -25,7 +25,7 @@
                                     <div class="carousel-item active">
                                         <div class="row">
                                             <div class="col-4">
-                                                <a href="#">
+                                                <a href="{{url("storage/prods/{$prodimages}")}}">
                                                     <img class="card-img img-fluid" src="{{asset('/img/store/product_single_01.jpg')}}" alt="Product Image 1">
                                                 </a>
                                             </div>
@@ -46,7 +46,7 @@
                                 </div>
                                 <!--End Slides-->
                             </div>
-                            <!--End Carousel Wrapper-->''
+                            <!--End Carousel Wrapper-->
                             <!--Start Controls-->
                             <div class="col-1 align-self-center">
                                 <a href="#multi-item-example" role="button" data-bs-slide="next">
