@@ -16,6 +16,8 @@ use App\Http\Controllers\ShopController;
 */
 
 
+Route::get('/dashboard', [ShopController::class, 'dashboard'])->name('dashboard');
+
 Route::get('/', [ShopController::class, 'index'])->name('index');
 
 Route::get('/sobre', [ShopController::class, 'about'])->name('about');
