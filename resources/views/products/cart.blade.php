@@ -15,7 +15,10 @@
                             </thead>
         
                             <tbody>
-                                <td>Calça Jeans</td>
+                                <td>
+                                    <img src="{{asset('img/store/banner_img_01.jpg')}}" width="20%" height="20%" alt="produto">
+                                    Calça Jeans
+                                </td>
                                 <td>R$ 99,90</td>
                                 <td> - 1 + </td>
                                 <td>R$ 99,90</td>
@@ -72,6 +75,8 @@
                         <hr>
                         
                         <h1 class="h2 d-flex justify-content-between">Total <span>R$ 139,89</span></h1>
+
+                        <button class="btn btn-success mt-2 col-12"> Finalizar Compras </button>
                     </div>
                 </div>
             </div>
